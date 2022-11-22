@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="std">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form method="POST"action="/std">
+	{%csrf_token %}
+	<div>
+		<br>
+		<p>
+			<h3>Enter Details</h3>
+		</p>
+		<div>
+			<p>student id:</p>{{form.sid}}
+		</div>
+		<div>
+			<p>student Name:</p>{{form.sname}}
+		</div>
+		<div>
+			<p>student Email:</p>{{form.semail}}
+		</div>
+		<div>
+			<p>student contact:</p>{{form.scontact}}
+		</div>
+		<div>
+			<br>
+			<button type="submit"></button>
+		</div>
+	</div>
+	</form>		
+
+</body>
+</html>

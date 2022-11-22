@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="std">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>student Record</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>student ID</th>
+				<th>student Name</th>
+				<th>student Email</th>
+				<th>student Contact</th>
+				<th>Action</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			{% for studentdata in studentdatas %}
+			<tr>
+				<td>{{studentdata.sid}}</td>
+				<td>{{studentdata.sname}}</td>
+				<td>{{studentdata.semail}}</td>
+				<td>{{studentdata,scontact</td>
+				<td>
+					<a href="/edit/{{studentdata.id}}">Edit</a>
+					<a href="/delete/{{studentdata.id}}">Delete</a>
+
+				</td>
+				{% endfor %}
+			}
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<button><a style="colour: white;" href="/std">Add New Record</a></button>
+
+
+</body>
+</html>

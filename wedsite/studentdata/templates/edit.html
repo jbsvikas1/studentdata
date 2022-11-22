@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="std">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+	<form method="POST" action="/update/{{studentdata.id}}">
+		{%csrf_token %}
+		<div>
+			<br>
+			<p>
+				<h3>Update Details</h3>
+			</p>
+		</div>
+		<div>
+			<p>student Id:</p>
+			<div>
+				<input type="text" name="sid" value="{{studentdata.sid}}"/>
+			</div>
+		</div>
+		<div>
+			<p>student Name:</p>
+			<div>
+				<input type="text" name="sname" value="{{studentdata.sname}}"/>
+			</div>
+		</div>
+		<div>
+			<p>student Email:</p>
+			<div>
+				<input type="email" name="semail" value="{{studentdata.semail}}"/>
+			</div>
+		</div>
+		<div>
+			<p>student Contact:</p>
+			<div>
+				<input type="text" name="scontact" value="{{studentdata.sname}}"/>
+			</div>
+		</div>
+		<div>
+			<br>
+			<button type="submit">Update</button>
+		</div>	
+
+
+
+
+	</form>
+
+</body>
+</html>
